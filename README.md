@@ -8,14 +8,14 @@
 
 Academic team project. Core trip tracking, scoring, and history features are implemented. Supabase setup requires local environment variables.
 
-**Key Features**
+### Key Features
 
 - **Trip Recording:** Records start/end times and GPS traces via the device and stores them as `trips`.
 - **Scoring:** Computes driving scores and shows an overall score badge for each trip.
 - **History View:** Browse past trips with summaries and map previews.
 - **Supabase Integration:** Stores users, trips, and driving scores in Supabase; includes a diagnostic script to verify connectivity.
 
-**How It Works**
+### How It Works
 
 - **Frontend:** Built with React Native + Expo. Screens live in `drivetracker/app` and `drivetracker/views`.
 - **Data Layer:** Uses `@supabase/supabase-js` to read/write `users`, `trips`, and `driving_scores` in Supabase. The model/DB helper code is in `drivetracker/models` and `drivetracker/database`.
@@ -23,7 +23,7 @@ Academic team project. Core trip tracking, scoring, and history features are imp
 
 ---
 
-**Data & Analytics Overview**
+## Data & Analytics Overview
 
 **DriveTracker** implements an end-to-end data pipeline:
 - Captures GPS telemetry from mobile devices
@@ -31,7 +31,7 @@ Academic team project. Core trip tracking, scoring, and history features are imp
 - Computes KPI-style performance scores from raw sensor data
 - Enables historical trend analysis via trip summaries and visualizations
 
-**Repository Layout**
+### Repository Layout
 
 - **`drivetracker/app`**: Router and top-level screens (`index.jsx`, `history.jsx`, `track.jsx`).
 - **`drivetracker/components`**: Reusable UI (e.g., `TripCard.jsx`, `OverallScoreBadge.jsx`).
@@ -42,17 +42,23 @@ Academic team project. Core trip tracking, scoring, and history features are imp
 
 ---
 
-**Screenshots**
+## System Architecture
 
-Home
+<img width="1600" height="900" alt="drivetracker_architecture" src="https://github.com/user-attachments/assets/bd6624e1-41a7-470f-8230-d2eb5ffb0ae5" />
+
+---
+
+## Screenshots
+
+### Home
 
 ![Home Screenshot](drivetracker/assets/HomeScreenshot.jpg)
 
-History
+### History
 
 ![History Screenshot](drivetracker/assets/HistoryScreenshot.jpg)
 
-Track / Trip View
+### Track / Trip View
 
 ![Track Screenshot](drivetracker/assets/TrackScreenShot.jpg)
 
@@ -126,7 +132,7 @@ npm run test:unit
 
 ---
 
-**Contribution & Notes**
+## Contribution & Notes
 
 - Keep secrets out of git: add `drivetracker/.env` to `.gitignore` if you add any credentials locally.
 - If you change the Supabase schema, update `drivetracker/models/supabaseModel.js` and `drivetracker/database/demo_seed.sql` accordingly.
