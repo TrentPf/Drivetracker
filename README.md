@@ -8,8 +8,6 @@
 
 Academic team project. Core trip tracking, scoring, and history features are implemented. Supabase setup requires local environment variables.
 
----
-
 **Key Features**
 
 - **Trip Recording:** Records start/end times and GPS traces via the device and stores them as `trips`.
