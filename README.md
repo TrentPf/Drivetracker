@@ -2,6 +2,10 @@
 
 **Project:** DriveTracker is a React Native / Expo app that records driving trips, computes driving scores, and provides historical trip visualizations. This repository contains the mobile app code, a small demo database connector using Supabase, and utility scripts for testing connectivity.
 
+## Project Status
+
+Academic team project. Core trip tracking, scoring, and history features are implemented. Supabase setup requires local environment variables.
+
 **Key Features**
 
 - **Trip Recording:** Records start/end times and GPS traces via the device and stores them as `trips`.
@@ -115,5 +119,13 @@ npm run test:unit
 - Keep secrets out of git: add `drivetracker/.env` to `.gitignore` if you add any credentials locally.
 - If you change the Supabase schema, update `drivetracker/models/supabaseModel.js` and `drivetracker/database/demo_seed.sql` accordingly.
 - For UI changes, follow existing component conventions in `drivetracker/components`.
+
+## My Contributions
+
+- Implemented trip history UI and reusable trip summary components
+- Helped build driving score calculation logic
+- Integrated Supabase data access for users, trips, and scores
+- Added diagnostic scripts for database connectivity
+- Contributed to project structure and documentation
 
 
