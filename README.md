@@ -138,4 +138,10 @@ npm run test:unit
 - Added diagnostic scripts for database connectivity
 - Contributed to project structure and documentation
 
+## Challenges & Lessons Learned
+
+- Managing asynchronous data loading across mobile views
+- Structuring backend APIs for scalable data retrieval
+- Coordinating database interactions between frontend and backend services
+- Working within an agile team development process
 
