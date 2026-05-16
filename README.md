@@ -1,4 +1,4 @@
-﻿# Group8F25 — DriveTracker
+﻿# DriveTracker
 
 **Project:** DriveTracker is a React Native / Expo app that records driving trips, computes driving scores, and provides historical trip visualizations. This repository contains the mobile app code, a small demo database connector using Supabase, and utility scripts for testing connectivity.
 
